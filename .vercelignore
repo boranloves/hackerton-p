@@ -1,0 +1,12 @@
+# 개인 데이터/로컬 전용 파일은 배포에서 제외
+data/fridge_ai.db
+data/backups/
+data/app.log*
+data/secret.key
+data/*.json
+__pycache__/
+*.pyc
+crawler.py
+smoke_test.py
+run.bat
+README.md

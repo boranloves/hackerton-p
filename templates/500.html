@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}서버 오류 · 냉장고 털이 AI{% endblock %}
+{% block head_title %}서버 오류{% endblock %}
+{% block head_desc %}문제가 계속되면 data/app.log를 확인해 주세요.{% endblock %}
+{% block content %}
+<div class="card error-card">
+  <div class="error-emoji">🥄</div>
+  <h2>500 — 서버 내부 오류</h2>
+  <p class="muted">요청 처리 중 문제가 발생했습니다. 잠시 후 다시 시도해 주세요.</p>
+  <a class="btn primary" href="/">대시보드로 돌아가기</a>
+</div>
+{% endblock %}

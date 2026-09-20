@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}페이지를 찾을 수 없습니다 · 냉장고 털이 AI{% endblock %}
+{% block head_title %}페이지를 찾을 수 없습니다{% endblock %}
+{% block head_desc %}요청한 페이지가 존재하지 않습니다.{% endblock %}
+{% block content %}
+<div class="card error-card">
+  <div class="error-emoji">🧊</div>
+  <h2>404 — 찾을 수 없는 페이지</h2>
+  <p class="muted">주소가 바뀌었거나 존재하지 않는 페이지입니다.</p>
+  <a class="btn primary" href="/">대시보드로 돌아가기</a>
+</div>
+{% endblock %}

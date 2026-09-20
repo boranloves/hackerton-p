@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}식단 기록 · 냉장고 털이 AI{% endblock %}
+{% block head_title %}식단 기록 & 칼로리 분석{% endblock %}
+{% block head_desc %}먹은 재료를 기록하면 칼로리를 계산하고, 평소 식단 패턴을 분석해 내일 칼로리를 예측합니다.{% endblock %}
+{% block content %}
+<div class="grid-form-chart">
+  <section class="card">
+    <h2>오늘의 식단 기록</h2>
+    <form id="meal-form" class="form">
+      <div class="form-row">
+        <label>날짜 <input type="date" name="date" required></label>
+        <label>끼니
+          <select name="type"><option>아침</option><option>점심</option>
+            <option>저녁</option><option>간식</option></select>
+        </label>
+      </div>
+      <div id="meal-items">
+        <div class="form-row item-row">
+          <label>재료 <input name="item-name" required placeholder="예: 계란"></label>
+          <label>양(g) <input type="number" name="item-amount" value="100" min="1" required></label>
+        </div>
+      </div>
+      <button type="button" id="add-item" class="btn ghost">+ 재료 추가</button>
+      <button type="submit" class="btn primary">기록 저장</button>
+    </form>
+    <div id="meal-form-result" class="hint"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>최근 7일동안의 칼로리</h2>
+      <div id="cal-summary" class="muted"></div>
+    </div>
+    <div class="chart-box"><canvas id="cal-chart"></canvas></div>
+  </section>
+</div>
+
+<section class="card">
+  <div class="card-head">
+    <h2>기록된 식단</h2>
+    <div class="muted">kcal는 영양 DB 기준 계산값입니다</div>
+  </div>
+  <div id="meal-list" class="list"></div>
+</section>
+{% endblock %}

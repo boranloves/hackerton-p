@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}영양 분석 · 냉장고 털이 AI{% endblock %}
+{% block head_title %}영양소 결핍 분석 & 식단 관리{% endblock %}
+{% block head_desc %}최근 식단 기록을 바탕으로 영양소 섭취 비율과 결핍을 분석합니다.{% endblock %}
+{% block content %}
+<section class="card" id="score-card">
+  <div class="card-head">
+    <h2>나의 영양 밸런스</h2>
+    <div class="muted">최근 7일 평균 · 권장 섭취량 대비</div>
+  </div>
+  <div class="grid-form-chart">
+    <div class="score-wrap">
+      <div id="score-big" class="score-big">–</div>
+      <div id="score-label" class="muted">밸런스 지수</div>
+      <div id="deficit-top" class="deficit-top"></div>
+    </div>
+    <div class="chart-box"><canvas id="nutri-radar"></canvas></div>
+  </div>
+</section>
+
+<section class="card">
+  <div class="card-head">
+    <h2>영양소별 섭취 현황</h2>
+    <div id="unknown-note" class="muted"></div>
+  </div>
+  <div id="nutri-rows" class="list"></div>
+</section>
+
+<section class="card">
+  <div class="card-head">
+    <h2>나의 영양서 결핍 관리 제안</h2>
+    <a class="link" href="/recipes">보충 레시피 보기 →</a>
+  </div>
+  <div id="advice-list" class="list"></div>
+</section>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}레시피 추천 · 냉장고 털이 AI{% endblock %}
+{% block head_title %}냉장고 털이 레시피 추천{% endblock %}
+{% block head_desc %}남거나 유통기한이 임박한 재료 · 평소 식단 · 부족한 영양소를 종합해 점수화했습니다.{% endblock %}
+{% block content %}
+<section class="card" id="allergy-card">
+  <div class="card-head">
+    <h2>🚫 알레르기 설정</h2>
+    <span class="muted" id="allergy-note">선택한 재료가 든 레시피는 추천에서 제외됩니다.</span>
+  </div>
+  <div id="allergy-chips" class="chips">
+    {% for a in allergens %}
+    <button type="button" class="chip{{ ' on' if a.key in saved_allergies }}" data-allergy="{{ a.key }}"
+            title="{{ a.label }} 알레르기 — 이 재료가 든 레시피를 추천에서 제외합니다">{{ a.label }}</button>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="card" id="usual-card">
+  <div class="card-head">
+    <h2>평소 식단 분석</h2>
+    <button id="re-roll" class="btn ghost">↻ 다시 추천</button>
+  </div>
+  <div id="usual-summary" class="usual-summary"></div>
+</section>
+
+<section class="card">
+  <h2>오늘의 추천 레시피</h2>
+  <p class="card-sub">점수 구성: 재료 커버리지 60 · 유통기한(소비기한) 임박재료 소진 최대 20 · 평소 식단 12 · 결핍 보충 최대 16 · 인기도 5</p>
+  <div id="recipe-cards" class="recipe-grid"></div>
+</section>
+{% endblock %}

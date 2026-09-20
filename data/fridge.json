@@ -1,0 +1,200 @@
+[
+  {
+    "id": "c6d748b8",
+    "name": "두부",
+    "category": "채소류",
+    "amount": "300g",
+    "expiry": "2026-09-20",
+    "source": "사진 분석",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "58004164",
+    "name": "우유",
+    "category": "유제품",
+    "amount": "1L",
+    "expiry": "2026-09-21",
+    "source": "사진 분석",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "d9667084",
+    "name": "돼지고기",
+    "category": "축산류",
+    "amount": "400g",
+    "expiry": "2026-09-21",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "ce0e465d",
+    "name": "시금치",
+    "category": "채소류",
+    "amount": "1단",
+    "expiry": "2026-09-22",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "368a3a38",
+    "name": "어묵",
+    "category": "해물류",
+    "amount": "2장",
+    "expiry": "2026-09-23",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "df9a3c9c",
+    "name": "계란",
+    "category": "계란",
+    "amount": "10개",
+    "expiry": "2026-09-24",
+    "source": "사진 분석",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "b24d35e0",
+    "name": "애호박",
+    "category": "채소류",
+    "amount": "1개",
+    "expiry": "2026-09-26",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "abfd1e23",
+    "name": "김치",
+    "category": "채소류",
+    "amount": "800g",
+    "expiry": "2026-09-29",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "1b1a1e89",
+    "name": "양파",
+    "category": "채소류",
+    "amount": "3개",
+    "expiry": "2026-10-03",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "780ecbf9",
+    "name": "당근",
+    "category": "채소류",
+    "amount": "2개",
+    "expiry": "2026-10-04",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "0f21b41f",
+    "name": "감자",
+    "category": "채소류",
+    "amount": "5개",
+    "expiry": "2026-10-09",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "e5108232",
+    "name": "토마토",
+    "category": "채소류",
+    "amount": "3개",
+    "expiry": "2026-09-25",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "8a26e2aa",
+    "name": "오이",
+    "category": "채소류",
+    "amount": "3개",
+    "expiry": "2026-09-28",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "6178f7b0",
+    "name": "바나나",
+    "category": "과일",
+    "amount": "4송이",
+    "expiry": "2026-09-23",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "b8582b68",
+    "name": "김",
+    "category": "기타",
+    "amount": "1봉",
+    "expiry": "2026-10-19",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "c6e417d8",
+    "name": "밥",
+    "category": "곡류",
+    "amount": "냉동 2공기",
+    "expiry": "2026-10-10",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "a3faea83",
+    "name": "간장",
+    "category": "기타",
+    "amount": "1병",
+    "expiry": "2026-12-18",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "1073c66a",
+    "name": "참기름",
+    "category": "기타",
+    "amount": "1병",
+    "expiry": "2027-03-18",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "1d1b28c9",
+    "name": "마늘",
+    "category": "채소류",
+    "amount": "1팩",
+    "expiry": "2026-10-14",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "7e477a9b",
+    "name": "대파",
+    "category": "채소류",
+    "amount": "2대",
+    "expiry": "2026-09-27",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "7e235dcd",
+    "name": "고춧가루",
+    "category": "기타",
+    "amount": "1봉",
+    "expiry": "2027-02-16",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "1c2d32f0",
+    "name": "된장",
+    "category": "기타",
+    "amount": "1통",
+    "expiry": "2026-12-18",
+    "source": "수동",
+    "added_at": "2026-09-18"
+  }
+]

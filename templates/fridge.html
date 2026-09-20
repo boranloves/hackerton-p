@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}냉장고 관리 · 냉장고 털이 AI{% endblock %}
+{% block head_title %}냉장고 관리{% endblock %}
+{% block head_desc %}재료와 유통기한을 저장하면 임박 순서로 분석해 보여줍니다.{% endblock %}
+{% block content %}
+<div class="grid-form-list">
+  <section class="card">
+    <h2>재료 등록하기</h2>
+    <form id="fridge-form" class="form">
+      <label>재료명 <input name="name" required placeholder="예: 두부"></label>
+      <label>분류
+        <select name="category">
+          <option>채소류</option><option>축산류</option><option>해물류</option>
+          <option>계란</option><option>유제품</option><option>곡류</option>
+          <option>과일</option><option>기타</option>
+        </select>
+      </label>
+      <label>양 <input name="amount" placeholder="예: 300g"></label>
+      <label>유통기한 <input type="date" name="expiry" required></label>
+      <button type="submit" class="btn primary">등록</button>
+    </form>
+    <div class="hint">유통기한이 임박한 재료는 대시보드와 레시피 추천에 자동 반영됩니다.</div>
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>보관 중인 재료</h2>
+      <div id="fridge-summary" class="muted"></div>
+    </div>
+    <div id="fridge-list" class="list"></div>
+  </section>
+</div>
+{% endblock %}

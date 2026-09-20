@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}냉장고 털이 AI{% endblock %}</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧊</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='vendor/chart.umd.min.js') }}"></script>
+</head>
+<body data-page="{{ page }}">
+<div class="layout">
+  <aside class="sidebar">
+    <div class="logo">
+      <span class="logo-icon">⭐</span>
+      <div>
+        <div class="logo-title">냉장터리 ai</div>
+        <div class="logo-sub">음식물 절약 · 식단 관리</div>
+      </div>
+    </div>
+    <nav>
+      <a href="/" class="{{ 'active' if page == 'dashboard' }}">
+        <span class="ico"></span> 대시보드</a>
+      <a href="/fridge" class="{{ 'active' if page == 'fridge' }}">
+        <span class="ico"></span> 냉장고 관리</a>
+      <a href="/diet" class="{{ 'active' if page == 'diet' }}">
+        <span class="ico"></span> 식단 기록</a>
+      <a href="/recipes" class="{{ 'active' if page == 'recipes' }}">
+        <span class="ico"></span> 레시피 추천</a>
+      <a href="/nutrition" class="{{ 'active' if page == 'nutrition' }}">
+        <span class="ico"></span> 영양 분석</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="mock-badge">v1.2</span>
+      <div>식단·프로필·냉장고는 브라우저 <b>쿠키</b>에 저장되어, 쿠키 삭제시 정보가 사라질 수 있습니다.</div>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="page-head">
+      <h1>{% block head_title %}{% endblock %}</h1>
+      <p>{% block head_desc %}{% endblock %}</p>
+    </header>
+    {% block content %}{% endblock %}
+  </main>
+</div>
+<div id="toast" class="toast"></div>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

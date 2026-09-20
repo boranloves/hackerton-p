@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}대시보드 · 냉장고 털이 AI{% endblock %}
+{% block head_title %}오늘의 주방 현황{% endblock %}
+{% block head_desc %}냉장고 · 식단.{% endblock %}
+{% block content %}
+<div class="stats-row" id="stat-cards"></div>
+
+<div class="grid-2col">
+  <section class="card">
+    <div class="card-head">
+      <h2>유통기한 임박 재료</h2>
+      <a class="link" href="/fridge">냉장고 관리 →</a>
+    </div>
+    <div id="urgent-list" class="list"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>영양 결핍 TOP</h2>
+      <a class="link" href="/nutrition">영양 분석 →</a>
+    </div>
+    <div id="deficit-list" class="list"></div>
+  </section>
+</div>
+
+<section class="card">
+  <div class="card-head">
+    <h2 오늘의 냉장고 털이 레시피</h2>
+    <a class="link" href="/recipes">레시피 추천 →</a>
+  </div>
+  <p class="card-sub">유통기한(소비기한) 임박 재료 · 평소 식단 · 보충이 필요한 영양소를 종합해 추천했습니다.</p>
+  <div id="recipe-cards" class="recipe-grid"></div>
+</section>
+{% endblock %}
